@@ -258,7 +258,7 @@ app.post('/courses/bySubject',
     const courses = await Course.find({subject:subject,independent_study:false}).sort({term:1,num:1,section:1})
     
     res.locals.courses = courses
-    res.locals.strTimes = strTimes
+    //res.locals.strTimes = strTimes
     //res.json(courses)
     res.render('courselist')
   }
