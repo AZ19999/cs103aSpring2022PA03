@@ -1,4 +1,4 @@
-<ul>
+<div class="d-flex flex-wrap text-center overflow-scroll">
     <% for (course of courses){%>
         <li> 
             <a href="/schedule/remove/<%= course._id %>">X</a>
@@ -8,8 +8,13 @@
             <%= course.term %>
             
         </li>
+        <li>
+        Enrollment: <%=course.enrolled %>,
+        Limit: <%=course.limit || 999 %>,
+        Waitlist: <%= course.waiting %>
+        </li>
     <% } %>
-</ul>
+</div>
 
 <!--
     <pre>
