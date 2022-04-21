@@ -307,7 +307,7 @@ app.post('/courses/byKeyword',
     const keyword = req.body.keyword;
     const courses = 
        await Course
-               .find({name:keyword,independent_study:false})
+               .find({name: {$regex: keyword, $options: "$i"},independent_study:false})
                .sort({term:1,num:1,section:1})
     res.locals.courses = courses
     res.locals.times2str = times2str
