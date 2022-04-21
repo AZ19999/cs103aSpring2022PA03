@@ -301,6 +301,20 @@ app.post('/courses/byInst',
   }
 )
 
+app.post('/courses/byKeyword',
+  // show courses that contain a specfic keyword
+  async (req,res,next) => {
+    const keyword = req.body.keyword;
+    const courses = 
+       await Course
+               .find({name: {$regex: keyword, $options: "$i"},independent_study:false})
+               .sort({term:1,num:1,section:1})
+    res.locals.courses = courses
+    res.locals.times2str = times2str
+    res.render('courselist')
+  }
+)
+
 app.use(isLoggedIn)
 
 app.get('/addCourse/:courseId',
