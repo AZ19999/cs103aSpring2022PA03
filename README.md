@@ -1,6 +1,6 @@
 # CS103a Spring 2022 Programming Assignment 3
 
-Programming Assignment 3 for the 
+Team Members: Alex Zhu, Vibhu Singh, Zach Allon
 
 ## Installation
 
