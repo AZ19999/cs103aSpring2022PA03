@@ -39,8 +39,9 @@ Here we want a ul list with the instructor, coursenum, title, term
         </td>
 
         <td>
-        
-            <% course.strTimes %> <br> 
+            <% for (t of course.strTimes){%> 
+                <%= t %> <br> 
+            <%} %>
         </td>
          <!-- <%= JSON.stringify(course.times) %> <br> -->
         
