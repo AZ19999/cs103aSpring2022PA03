@@ -2,6 +2,8 @@
 
 Team Members: Alex Zhu, Vibhu Singh, Zach Allon
 
+## Movie Link
+
 ## Installation
 
 This will show you how to download and run the app on your computer
