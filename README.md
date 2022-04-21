@@ -3,6 +3,7 @@
 Team Members: Alex Zhu, Vibhu Singh, Zach Allon
 
 ## Movie Link
+[A link to the video](https://www.youtube.com/watch?v=b4TGMww1C6E)
 
 ## Installation
 
