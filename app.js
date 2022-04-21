@@ -309,7 +309,6 @@ app.post('/courses/byKeyword',
                .find({name: {$regex: keyword, $options: "$i"},independent_study:false})
                .sort({term:1,num:1,section:1})
     res.locals.courses = courses
-    res.locals.times2str = times2str
     res.render('courselist')
   }
 )
